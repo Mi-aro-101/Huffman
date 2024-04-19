@@ -1,0 +1,24 @@
+To fill function:
+    Compressor::writeBitToFile (Ilay bit efa tokony ca va fa ilay write file ahoana bg a)
+
+Function to read a file in cpp :
+
+    #include <iostream>
+    #include <fstream>
+    using namespace std;
+
+    int main() {
+        ifstream inputFile("example.txt"); // Open the file "example.txt"
+        string line;
+
+        if (inputFile.is_open()) {
+            while (getline(inputFile, line)) {
+                cout << line << endl; // Print each line from the file
+            }
+            inputFile.close(); // Close the file
+        } else {
+            cout << "Unable to open the file." << endl;
+        }
+
+        return 0;
+    }

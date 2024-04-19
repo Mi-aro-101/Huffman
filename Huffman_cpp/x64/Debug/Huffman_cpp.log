@@ -1,0 +1,3 @@
+﻿  Huffman_cpp.cpp
+E:\Information_and_Technology_University\Licence_3\Semestre_6\Mr_Tsinjo\Huffman_cpp\Huffman_cpp\Huffman_cpp.cpp(1,1): warning C4821: Unable to determine Unicode encoding type, please save the file with signature (BOM)
+LINK : fatal error LNK1000: Internal error during IncrBuildImage
