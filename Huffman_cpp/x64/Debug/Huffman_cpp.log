@@ -1,3 +1,11 @@
-﻿  Huffman_cpp.cpp
-E:\Information_and_Technology_University\Licence_3\Semestre_6\Mr_Tsinjo\Huffman_cpp\Huffman_cpp\Huffman_cpp.cpp(1,1): warning C4821: Unable to determine Unicode encoding type, please save the file with signature (BOM)
-LINK : fatal error LNK1000: Internal error during IncrBuildImage
+﻿  Main.cpp
+E:\PROFESSIONAL\Information_and_Technology_University\Licence_3\Semestre_6\Mr_Tsinjo\Huffman_cpp\Huffman_cpp\Main.cpp(24,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 2 has type 'unsigned __int64'
+  E:\PROFESSIONAL\Information_and_Technology_University\Licence_3\Semestre_6\Mr_Tsinjo\Huffman_cpp\Huffman_cpp\Main.cpp(24,9):
+  consider using '%zi' in the format string
+  
+E:\PROFESSIONAL\Information_and_Technology_University\Licence_3\Semestre_6\Mr_Tsinjo\Huffman_cpp\Huffman_cpp\Main.cpp(29,40): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+E:\PROFESSIONAL\Information_and_Technology_University\Licence_3\Semestre_6\Mr_Tsinjo\Huffman_cpp\Huffman_cpp\Main.cpp(37,9): warning C4477: 'printf' : format string '%i' requires an argument of type 'int', but variadic argument 2 has type 'unsigned __int64'
+  E:\PROFESSIONAL\Information_and_Technology_University\Licence_3\Semestre_6\Mr_Tsinjo\Huffman_cpp\Huffman_cpp\Main.cpp(37,9):
+  consider using '%zi' in the format string
+  
+  Huffman_cpp.vcxproj -> E:\PROFESSIONAL\Information_and_Technology_University\Licence_3\Semestre_6\Mr_Tsinjo\Huffman_cpp\x64\Debug\Huffman_cpp.exe

@@ -17,49 +17,50 @@ class HuffmanResult
 class Huffman
 {
 	public:
-		/// <summary>
-		/// Having a word, evaluate the frequency (repetition) of each letter and put them as corresponding Node object
-		/// </summary>
-		/// <param name="word"></param>
-		/// <param name="helper"></param>
-		/// <returns>std::vector<Node*></returns>
+		/**
+		* Evaluate each char and calculate their freq (resp prob)
+		* @param word your text
+		* @param helper
+		* @return vector<Node*> that contains all the char and their freq
+		*/
 		std::vector<Node*> evaluateFreq(std::string word, Helper helper);
 
-		/// <summary>
-		/// Make the Huffman tree based on a vector of nodes
-		/// </summary>
-		/// <param name="nodes"></param>
-		/// <param name="helper"></param>
-		/// <returns>Node* root of the tree</returns>
+		/**
+		* Make the Huffman after the freq of each char of the text is evaluated
+		* @param node[&] 
+		* @param helper
+		* @return root node
+		*/
 		Node* makeTree(std::vector<Node*> nodes, Helper helper);
 
-		/// <summary>
-		/// Encode as binary based on Huffman coding all the leaf value of the root tree
-		/// </summary>
-		/// <param name="root"></param>
-		/// <param name="code"></param>
+		/**
+		* Assign code to each character based from the root node
+		* @param &root
+		* @param code [Recursive code require this param as the code]
+		* @return
+		*/
 		void encode(Node*root, std::string code);
 
-		/// <summary>
-		/// Rally all the above function to just have one that encode, makeTree and evaluate the word
-		/// </summary>
-		/// <param name="sentence"></param>
-		/// <returns></returns>
+		/**
+		* Rally evalueateFreq, makeTree and encode function -> assign code to each character
+		* @param sentence the text to encode
+		* @return HuffmanResult -> root and nodes[]
+		*/
 		HuffmanResult* huffmanEncode(std::string sentence);
 
-		/// <summary>
-		/// Transform a text to a binary string based of Huffman coding
-		/// </summary>
-		/// <param name="text"></param>
-		/// <returns></returns>
+		/**
+		* Take your text and encode the totality of it as a code (call huffmanEncode method)
+		* @param text
+		* @return string your coded text
+		*/
 		std::string textToHuffmanCode(std::string text);
 
-		/// <summary>
-		/// Decode the bin string based on the huffman tree and bring back its initial text
-		/// </summary>
-		/// <param name="root"></param>
-		/// <param name="binString"></param>
-		/// <returns></returns>
+		/**
+		* Decode the coded text and remake it as the original text
+		* @param &root node
+		* @param binString text to decode
+		* @return string the original/decoded text
+		*/
 		std::string decode(Node* root, std::string binString);
 };
 
