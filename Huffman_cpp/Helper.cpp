@@ -37,28 +37,28 @@ Node* Helper::getNodeByChar(std::string character, std::vector<Node*> nodes) {
 
 std::string Helper::fillWithZero(std::string group)
 {
-	int reste = 8 - group.length();
+	size_t reste = 8 - group.length();
 	for (int i = 0; i < reste; i++) {
 		group += "0";
 	}
 	return group;
 }
 
-char* Helper::readEnglishFile(std::string fileName)
+// *** The string temp gets destroyed and we cannot get the proper value of the return ***
+std::string Helper::readEnglishFile(std::string fileName)
 {
-	char result[] = "";
-
+	std::string temp;
+	const char error[] = "Unable to open file";
 	std::ifstream inputFile(fileName);
 	std::string line;
 	if (inputFile.is_open()) {
 		while (std::getline(inputFile, line)) {
-			result += line;
+			temp += line;
 		}
 		inputFile.close();
 	}
 	else {
-		return "Unable to open file";
+		return error;
 	}
-
-	return result;
+	return temp;
 }
